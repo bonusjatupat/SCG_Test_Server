@@ -8,7 +8,7 @@ exports.sendNoti = async (req, res) => {
 
         res.json(response)
     } catch (err) {
-        
+
         const { status, message } = errorHandler(err)
         res.status(status)
         res.json({ message })
