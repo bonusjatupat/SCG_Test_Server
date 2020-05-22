@@ -8,7 +8,7 @@ exports.getDirection = async (body) => {
     var information = ""
     await axios.get('https://maps.googleapis.com/maps/api/directions/json?origin=place_id:'+ scg_id +'&destination=place_id:'+ centralWorld_id +'&key=' + API_KEY)
                .then(res => information = res.data)
-    console.log('https://maps.googleapis.com/maps/api/directions/json?origin=place_id:'+ scg_id +'&destination=place_id:'+ centralWorld_id +'&key=' + API_KEY)
+               
     return information
 }
 

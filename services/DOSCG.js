@@ -1,5 +1,4 @@
 exports.findPattern = async (body) => {
-    console.log("get value api")
     var input = "X, Y, 5, 9, 15, 23, Z"
         input = input.replace(/ /g, "")
         input = input.split(",")

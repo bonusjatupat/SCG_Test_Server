@@ -26,11 +26,10 @@ app.use('/line', router.line)
 
 const httpServer = http.createServer(app)
 const httpsServer = https.createServer(options, app)
-httpServer.listen(3030);
-httpsServer.listen(3031);
 
-//const PORT = process.env.PORT || 3030
-
-//app.listen(_CONFIG.SERVER.PORT, () => {
-//    console.log(`SCG Server started on port *:${PORT}`)
-//})
+httpServer.listen(3030, () => {
+    console.log(`http Server started on port *:3030`)
+});
+httpsServer.listen(3031,  () => {
+    console.log(`https Server started on port *:3031`)
+});
